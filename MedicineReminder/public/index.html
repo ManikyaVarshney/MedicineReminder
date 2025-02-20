@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medicine Reminder System</h1>
+        <button onclick="login()">Login with Google</button>
+
+        <div id="patient-form">
+            <h2>Add Patient</h2>
+            <input type="text" id="patient-name" placeholder="Patient Name">
+            <input type="text" id="medicine" placeholder="Medicine Name">
+            <input type="datetime-local" id="start-time">
+            <input type="datetime-local" id="end-time">
+            <button onclick="addPatient()">Add Patient</button>
+        </div>
+
+        <div id="patients-list">
+            <h2>Patients</h2>
+            <ul id="patient-data"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
